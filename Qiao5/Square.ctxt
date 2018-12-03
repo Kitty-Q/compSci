@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Square
+comment1.params=size
+comment1.target=Square(int)
+comment10.params=
+comment10.target=void\ printSquare()
+comment2.params=row\ col
+comment2.target=int\ getValueAt(int,\ int)
+comment3.params=row
+comment3.target=int\ sumRow(int)
+comment4.params=col
+comment4.target=int\ sumCol(int)
+comment5.params=
+comment5.target=int\ sumMainDiag()
+comment6.params=
+comment6.target=int\ sumOtherDiag()
+comment7.params=
+comment7.target=boolean\ isSquare()
+comment8.params=
+comment8.target=boolean\ magic()
+comment9.params=
+comment9.target=void\ readSquare()
+numComments=11
