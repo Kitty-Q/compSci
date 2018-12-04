@@ -1,0 +1,46 @@
+import java.util.*;
+public class Ch6_1{
+    public static final Scanner scanner = new Scanner(System.in);
+    public static void sop(Object obj){
+        System.out.print(obj);
+    }
+    public static void sopln(Object obj){
+        System.out.println(obj);
+    }
+    public static int readIntegerBetween1and50(){
+        int res = scanner.nextInt();
+        if(res<1||res>50){
+            res=-1;
+        }
+        return res;
+    }
+    public static void main(String[]args){
+        sopln("How many number do you want to enter?");
+        int maxCount = scanner.nextInt();
+        int[] numbers = new int[50];
+        for (int pointer = 0; pointer<numbers.length;pointer++) {
+            numbers[pointer] = 0;
+        }
+        for (int count = 0; count<maxCount; count++){
+            sopln("");
+            sop("Please enter a number(from 1 to 50):");
+            int pos = readIntegerBetween1and50();
+            if(pos==-1){
+                sopln("input not valid!");
+                count--;
+                sopln("");
+                continue;
+            }
+            numbers[pos-1]+=1;
+        }
+        sopln("");
+        sopln("");
+        sop("number\tcount");
+        for (int pointer = 0; pointer<numbers.length;pointer++) {
+            sopln("");
+            sop(pointer+1);
+            sop("\t");
+            sop(numbers[pointer]);
+        }
+    }
+}
